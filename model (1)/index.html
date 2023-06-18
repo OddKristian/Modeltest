@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="uploads_files_1915278_wooden+watch+tower_Packed_Blender+2.8(1).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-2" data-position="-1.5394390249953522m 0.6972280550215046m -0.9288905565975369m" data-normal="-0.000002009853397634838m 0m -0.9999999999979803m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">First level</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-1.828668475151062m 2.1094682897071397m 1.713169991290643m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Second level</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="1.7313083663530726m 3.4732740478520263m 1.7929658655864245m" data-normal="-0.01096119313147557m 0m 0.9999399243180236m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Third level
+          </div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="1.5017882268480829m 4.7748703011896545m -1.8007137775421143m" data-normal="0m 0m -1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Fourth level</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="-1.8170289993286133m 6.107903581226311m -0.2794195758981495m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Top level</div>
+      </button><button class="Hotspot" slot="hotspot-7" data-position="-1.0641943447568707m 7.648165702819824m -0.11146178342272606m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Roof</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  </body>
+</html>
